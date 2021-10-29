@@ -1,0 +1,178 @@
+body{
+    background-color:#205c1d;
+    background-image: url('../full-bloom/full-bloom.png');
+}
+.areaFons{
+    background-image: url('../IMATGES/fons.jpeg');
+    background-size:contain;
+    height:800px;
+    background-position-x:center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#titol{
+    font-size: 67px;
+    font-family:Impact;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 50px;
+    color:rgb(200,255,200);
+    display: inline;
+}
+
+#galeria{
+    padding-right: 130px;
+    padding-top: 200px;
+    transform: rotate(58deg);
+    text-align: center;
+}
+#serveis{
+    transform: rotate(-11deg);
+    padding-left: 1000px;
+    padding-bottom:20px;
+}
+#fitosanitaris{
+    transform: rotate(19deg);
+    padding-right: 340px;
+    padding-top:25px;
+    text-align:center;
+}
+#contacte{
+    transform: rotate(1deg);
+    padding-left: 1030px;
+    padding-top:10px;
+}
+#empresa{
+    transform: rotate(-3deg);
+    padding-left: 740px;
+    padding-top:65px;
+    display: fixed;
+}
+
+a:link{
+    color:rgb(220,255,220);
+    font-weight: bold;
+    text-decoration: none;
+    font-size:23px;
+    z-index: 1;
+}
+a:visited{
+    color:rgb(220,255,220);
+}
+
+#home{
+    color:rgb(220,255,220);
+    display:inline;
+    margin-top:0px;
+    top:0px;
+    padding-left: 1120px;
+    font-size:23px;
+}
+#subtitol{
+    display:inline;
+    margin-left:30px;
+    color:rgb(220,255,220);
+}
+
+
+
+.Plantes{
+    margin-left:15%;
+    margin-top:100px;
+    display:grid;
+    align-items: center;
+    width:100%;
+    grid-template-columns:17% 17% 17% 17%;
+    grid-template-rows:35% 35%;
+    column-gap: 20px;
+    row-gap: 35px;
+    grid-template-areas:
+    "roses orquidies clavells hortensies"
+    "cactus arbres horticoles arbustos"
+}
+
+.Roses{
+    grid-area:roses;
+}
+
+.Orquidies{
+    grid-area:orquidies;
+}
+.Clavells{
+    grid-area:clavells;
+}
+.Hortensies{
+    grid-area:hortensies;
+}
+.Cactus{
+    grid-area:cactus;
+}
+.Arbres{
+    grid-area:arbres;
+}
+.Horticoles{
+    grid-area:horticoles;
+}
+.Arbustos{
+    grid-area:arbustos;
+}
+
+.Plantes > *
+{
+    object-fit: cover;
+    display:block;
+    transition-property: width;
+    transition-property:all;
+    transition-duration: 0.5s;
+    transition-timing-function:cubic-bezier();
+}
+
+.Plantes > :hover{
+    border:5px solid;
+    border-color:green;
+    width: 150%;
+    z-index: 1;
+    transform:skew(30deg,-10deg);
+}
+.Plantes > :active{
+    border:15px solid;
+    border-color:red;
+    width: 200%;
+    z-index: 1;
+    transform:skew(30deg,-20deg);
+}
+
+label{
+    display:block;
+    font-size:29px;
+    color:rgb(220,255,220);
+    text-align: center;
+}
+img{
+    width:100%;
+    height: auto;
+}
+
+
+.fitos{
+    display:grid;
+    grid-template-columns:10% 10% 10% 10% 10%;
+    grid-template-rows:20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    " vuit"      "vuit" "insecticida" "vuit" "vuit"
+    " vuit"   "hervicida"    "vuit" "fungicida" "vuit"
+    " cicatritzant"   "vuit"    "vuit" "vuit" "acaricida"
+    " vuit"   "abameticina"    "vuit" "bupirimato" "vuit"
+    " vuit"      "vuit" "inhibidor" "vuit" "vuit"
+}
+.insect{
+    grid-area:insecticida;
+}
+.herb{
+    grid-area:hervicida;
+}
+.empty{
+    grid-area:vuit;
+}

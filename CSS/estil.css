@@ -150,6 +150,7 @@ label{
     color:rgb(220,255,220);
     text-align: center;
 }
+
 img{
     width:100%;
     height: auto;
@@ -157,22 +158,109 @@ img{
 
 
 .fitos{
+    
     display:grid;
-    grid-template-columns:10% 10% 10% 10% 10%;
-    grid-template-rows:20% 20% 20% 20% 20%;
+    width:50%;
+    height: 80%;
+    grid-template-columns:20% 20% 20% 20% 20%;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    " vuit"      "vuit" "insecticida" "vuit" "vuit"
-    " vuit"   "hervicida"    "vuit" "fungicida" "vuit"
-    " cicatritzant"   "vuit"    "vuit" "vuit" "acaricida"
-    " vuit"   "abameticina"    "vuit" "bupirimato" "vuit"
-    " vuit"      "vuit" "inhibidor" "vuit" "vuit"
+    "vuit1 vuit2 insecticida vuit3 vuit4"
+    "vuit5 hervicida vuit6 fungicida vuit7"
+    "cicatritzant vuit8 vuit9 vuit10 acaricida"
+    "vuit11 abameticina vuit12 bupirimato vuit13"
+    "vuit14 vuit15 inhibidor vuit16 vuit17"
 }
+
+.fitos > *
+{
+    object-fit: cover;
+    display:block;
+    width:100%;
+    height:100%;
+}
+.fitos div{
+    background-color: coral;
+    height: 80%;
+}
+
 .insect{
     grid-area:insecticida;
 }
+
 .herb{
     grid-area:hervicida;
+    background-color:blue;
 }
-.empty{
-    grid-area:vuit;
+.fung{
+    grid-area:fungicida;
 }
+.cica{
+    grid-area:cicatritzant;
+}
+.aba{
+    grid-area:abameticina;
+}
+
+.bup{
+    grid-area:bupirimato;
+}
+
+.inh{
+    grid-area:inhibidor;
+}
+
+.empty1{
+    grid-area:vuit1;
+}
+.empty2{
+    grid-area:vuit2;
+}
+.empty3{
+    grid-area:vuit3;
+}
+.empty4{
+    grid-area:vuit4;
+}
+.empty5{
+    grid-area:vuit5;
+}
+.empty6{
+    grid-area:vuit6;
+}
+.empty7{
+    grid-area:vuit7;
+}
+.empty8{
+    grid-area:vuit8;
+}
+.empty9{
+    grid-area:vuit9;
+}
+.empty10{
+    grid-area:vuit10;
+}
+.empty11{
+    grid-area:vuit11;
+}
+.empty12{
+    grid-area:vuit12;
+}
+.empty13{
+    grid-area:vuit13;
+}
+.empty14{
+    grid-area:vuit14;
+}
+.empty15{
+    grid-area:vuit15;
+}
+.empty16{
+    grid-area:vuit16;
+}
+.empty17{
+    grid-area:vuit17;
+}
+
+
+

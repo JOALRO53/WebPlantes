@@ -55,17 +55,21 @@ div > img:hover{
 }
 
 /* Tots els fills dels fills del div amb classe fitos que siguin un div */ 
-.fitos > div:nth-child(n):nth-child(-n+24) > div{
+.fitos > div:nth-child(n):nth-child(-n+50) > div{
     color:rgb(220,255,220);
     font-size: 1.1em;
     padding-top: 35%;
 }
 /* Els fills del div amb classe fitos amb el nombre de fill indicat */
-.fitos > :nth-child(4)>div,:nth-child(10)>div,:nth-child(12)>div,:nth-child(20)>div,:nth-child(24) > div{
+.fitos > :nth-child(4)>div,:nth-child(10)>div,:nth-child(12)>div,:nth-child(20)>div,:nth-child(24) > div
+,.fitos > :nth-child(29)>div,.fitos > :nth-child(35)>div,.fitos > :nth-child(37)>div,
+.fitos > :nth-child(45)>div
+{
     padding-left: 5%;
 }
 /* Els fills del div amb classe fitos amb el nombre de fill indicat */
-.fitos > :nth-child(6) > div,:nth-child(14)>div,:nth-child(16)>div{
+.fitos > :nth-child(6) > div,:nth-child(14)>div,:nth-child(16)>div,:nth-child(31)>div,
+:nth-child(39)>div,.fitos > :nth-child(41)>div,.fitos > :nth-child(47)>div{
     text-align: right;
     margin-right: 5%;
 }

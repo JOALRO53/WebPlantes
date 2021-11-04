@@ -1,0 +1,41 @@
+body{
+    background-color:#205c1d;
+}
+
+#titol{
+    font-size: 3.5em;
+    font-family:Impact;
+    text-align: left;
+    padding-left: 2%;
+    color:rgb(200,255,200);
+    display: inline;
+}
+
+#subtitol{
+    font-size:2em;
+    display:inline;
+    margin-left:32%;
+    color:rgb(220,255,220);
+}
+
+#home{
+    color:rgb(220,255,220);
+    display:inline;
+    padding-left: 40%;
+    font-size:1.5em;
+}
+
+.cont{
+    display:grid;
+    grid-template-columns:20% 20% 20% 20% 20% 20% 20% 20% 20% 20%;
+    grid-template-rows:0.92fr 0.92fr 0.92fr 0.92fr 0.92fr;
+    grid-template-areas: 
+    "vuit1 vuit2 desc desc desc desc desc desc vuit3 vuit4"
+    "vuit5 vuit6 desc desc desc desc desc desc vuit7 vuit8"
+    "vuit9 vuit10 fot01 foto1 servs servs servs servs vuit11 vuit12"
+    "vuit13 vuit14 fot01 foto1 servs servs servs servs vuit15 vuit16"
+    "vuit17 vuit18 fot02 foto2 foto3 foto3 foto4 foto4 vuit19 vuit20"
+    
+}
+
+

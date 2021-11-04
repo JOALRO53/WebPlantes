@@ -1,25 +1,27 @@
 body{
     background-color:#205c1d;
-    background-image: url('../full-bloom/full-bloom.png');
 }
 
 #titol{
-    font-size: 67px;
+    font-size: 3.5em;
     font-family:Impact;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 2%;
     color:rgb(200,255,200);
     display: inline;
 }
+
 #home{
     color:rgb(220,255,220);
     display:inline;
-    padding-left: 1120px;
-    font-size:23px;
+    padding-left: 30%;
+    font-size:1.5em;
 }
+
 #subtitol{
+    font-size:2em;
     display:inline;
-    margin-left:30px;
+    margin-left:20%;
     color:rgb(220,255,220);
 }
 
@@ -28,53 +30,94 @@ body{
     display:grid;
     width:50%;
     height: 80%;
-    grid-template-columns:20% 20% 20% 20% 20%;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:20% 20% 20% 20% 20% 20% 20% 20% 20% 20%;
+    grid-template-rows:0.92fr 0.92fr 0.92fr 0.92fr 0.92fr;
     grid-template-areas: 
-    "vuit1 vuit2 insecticida vuit3 vuit4"
-    "vuit5 hervicida vuit6 fungicida vuit7"
-    "cicatritzant vuit8 vuit9 vuit10 acaricida"
-    "vuit11 abameticina vuit12 bupirimato vuit13"
-    "vuit14 vuit15 inhibidor vuit16 vuit17"
+    "vuit1 vuit2 insecticida vuit3 vuit4 vuit18 vuit19 tisores vuit20 vuit21"
+    "vuit5 hervicida vuit6 fungicida vuit7 vuit22 carret vuit23 rast vuit24"
+    "cicatritzant vuit8 vuit9 vuit10 acaricida motos vuit25 vuit26 vuit27 motoc"
+    "vuit11 abameticina vuit12 bupirimato vuit13 vuit28 fumig vuit29 cabas vuit30"
+    "vuit14 vuit15 inhibidor vuit16 vuit17 vuit31 vuit32 aixa vuit33 vuit34"
 }
 
 .fitos > *
 {
     object-fit: cover;
-    display:block;
+    display:inline-block;
     width:100%;
     height:100%;
+    transition: all 600ms ease-in-out;
 }
-.fitos div{
-    height: 100%;
+
+div > img:hover{
+    border:5px solid green;
+    border-radius: 50%;
+}
+
+/* Tots els fills dels fills del div amb classe fitos que siguin un div */ 
+.fitos > div:nth-child(n):nth-child(-n+24) > div{
+    color:rgb(220,255,220);
+    font-size: 1.1em;
+    padding-top: 35%;
+}
+/* Els fills del div amb classe fitos amb el nombre de fill indicat */
+.fitos > :nth-child(4)>div,:nth-child(10)>div,:nth-child(12)>div,:nth-child(20)>div,:nth-child(24) > div{
+    padding-left: 5%;
+}
+/* Els fills del div amb classe fitos amb el nombre de fill indicat */
+.fitos > :nth-child(6) > div,:nth-child(14)>div,:nth-child(16)>div{
+    text-align: right;
+    margin-right: 5%;
 }
 
 .insect{
     grid-area:insecticida;
 }
-
+.insect:hover{
+    transform: translate(0, 200%) scale(4,4) ;
+}
 .herb{
     grid-area:hervicida;
-    background-color:blue;
+}
+.herb:hover{
+    transform: translate(100%, 100%) scale(4,4);
 }
 .fung{
     grid-area:fungicida;
 }
+.fung:hover{
+    transform: translate(-100%, 100%) scale(4,4);
+}
 .cica{
     grid-area:cicatritzant;
+}
+.cica:hover{
+    transform: translate(200%,0%) scale(4,4);
 }
 .aba{
     grid-area:abameticina;
 }
-
+.aba:hover{
+    transform: translate(100%,-100%) scale(4,4);
+}
 .bup{
     grid-area:bupirimato;
 }
-
+.bup:hover{
+    transform: translate(-100%,-100%) scale(4,4);
+}
+.aca{
+    grid-area:acaricida;
+}
+.aca:hover{
+    transform: translate(-200%,0%) scale(4,4);
+}
 .inh{
     grid-area:inhibidor;
 }
-
+.inh:hover{
+    transform: translate(0%,-200%) scale(4,4);
+}
 .empty1{
     grid-area:vuit1;
 }
@@ -102,6 +145,14 @@ body{
 .empty9{
     grid-area:vuit9;
 }
+.empty9,.empty26{
+    text-align: center;
+    align-items: center;
+    padding-top:10%;
+    font-size:2em;
+    color:rgb(220,255,220);
+}
+
 .empty10{
     grid-area:vuit10;
 }
@@ -125,4 +176,104 @@ body{
 }
 .empty17{
     grid-area:vuit17;
+}
+
+.empty18{
+    grid-area:vuit18;
+}
+.empty19{
+    grid-area:vuit19;
+}
+.empty20{
+    grid-area:vuit20;
+}
+.empty21{
+    grid-area:vuit21;
+}
+.empty22{
+    grid-area:vuit22;
+}
+.empty23{
+    grid-area:vuit23;
+}
+.empty24{
+    grid-area:vuit24;
+}
+.empty25{
+    grid-area:vuit25;
+}
+.empty26{
+    grid-area:vuit26;
+}
+.empty27{
+    grid-area:vuit27;
+}
+.empty28{
+    grid-area:vuit28;
+}
+.empty29{
+    grid-area:vuit29;
+}
+.empty30{
+    grid-area:vuit30;
+}
+.empty31{
+    grid-area:vuit31;
+}
+.empty32{
+    grid-area:vuit32;
+}
+.empty33{
+    grid-area:vuit33;
+}
+.empty34{
+    grid-area:vuit34;
+}
+.tisores{
+    grid-area:tisores;
+}
+.tisores:hover{
+    transform: translate(0,200%) scale(4,4);
+}
+.carreto{
+    grid-area:carret;
+}
+.carreto:hover{
+    transform: translate(100%,100%) scale(4,4);
+}
+.rasclet{
+    grid-area:rast;
+}
+.rasclet:hover{
+    transform: translate(-100%,100%) scale(4,4);
+}
+.motoserra{
+    grid-area:motos;
+}
+.motoserra:hover{
+    transform: translate(200%,0) scale(4,4);
+}
+.motocultor{
+    grid-area:motoc;
+}
+.motocultor:hover{
+    transform: translate(-200%,0) scale(4,4);
+}
+.fumigador{
+    grid-area:fumig;
+}
+.fumigador:hover{
+    transform: translate(100%,-100%) scale(4,4);
+}
+.cabas{
+    grid-area:cabas;
+}
+.cabas:hover{
+    transform: translate(-100%,-100%) scale(4,4);
+}
+.aixada{
+    grid-area:aixa;
+}
+.aixada:hover{
+    transform: translate(0,-200%) scale(4,4);
 }

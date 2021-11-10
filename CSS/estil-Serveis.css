@@ -2,40 +2,100 @@ body{
     background-color:#205c1d;
 }
 
+#links{
+    display:inline-flex;
+    width:35%;
+    flex-direction: row;
+    margin-left: 34%;
+    flex-wrap: nowrap;
+    align-items:baseline;
+    column-gap: 3%;
+    color:rgb(220,255,220);
+}
+
+a:link{
+    color:rgb(220,255,220);
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+}
+a:visited{
+    color:rgb(220,255,220);
+}
+
 #titol{
+    display: inline;
     font-size: 3.5em;
     font-family:Impact;
     text-align: left;
     padding-left: 2%;
     color:rgb(200,255,200);
-    display: inline;
 }
 
 #subtitol{
+    display: inline;
+    margin-left:4em;
+    color:rgb(220,255,220);
     font-size:2em;
-    display:inline;
-    margin-left:32%;
-    color:rgb(220,255,220);
-}
-
-#home{
-    color:rgb(220,255,220);
-    display:inline;
-    padding-left: 40%;
-    font-size:1.5em;
 }
 
 .cont{
-    display:grid;
-    grid-template-columns:20% 20% 20% 20% 20% 20% 20% 20% 20% 20%;
-    grid-template-rows:0.92fr 0.92fr 0.92fr 0.92fr 0.92fr;
-    grid-template-areas: 
-    "vuit1 vuit2 desc desc desc desc desc desc vuit3 vuit4"
-    "vuit5 vuit6 desc desc desc desc desc desc vuit7 vuit8"
-    "vuit9 vuit10 fot01 foto1 servs servs servs servs vuit11 vuit12"
-    "vuit13 vuit14 fot01 foto1 servs servs servs servs vuit15 vuit16"
-    "vuit17 vuit18 fot02 foto2 foto3 foto3 foto4 foto4 vuit19 vuit20"
-    
+    padding-left: 10%;
+    padding-top:2%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    width:80%;
+    height:auto;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 2%;
 }
-
-
+#fotocap{
+    width:80%;
+    object-fit:cover;
+}
+.imag{
+    width:100%;
+    height: auto;
+}
+h2,h3{
+    color:rgb(200,255,200);
+    text-align: center;
+}
+p,#llista{
+    color:rgb(200,255,200);
+    font-size: 1.2em;
+}
+#descripcio{
+    width:65%;
+    padding-left: 7.5%;
+}
+#foto1{
+    display:flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 5px;
+    width:30%;
+}
+.mosaic{
+    width:49%;
+    height: 49%;
+}
+#servs{
+    background-color:brown;
+    width:65%;
+}
+#foto2{
+    width:30%;
+}
+#foto3{
+    width:30%;
+}
+#foto4{
+    width:30%;
+}
+#llista{
+    line-height: 250%;
+    font-size:1.5em;
+}

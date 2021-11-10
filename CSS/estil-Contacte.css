@@ -1,0 +1,169 @@
+body{
+    background-color:#205c1d;
+    overflow-y: hidden;
+}
+
+#links{
+    display:inline-flex;
+    width:35%;
+    flex-direction: row;
+    margin-left: 32%;
+    flex-wrap: nowrap;
+    align-items:baseline;
+    column-gap: 4%;
+    color:rgb(220,255,220);
+}
+
+a:link{
+    color:rgb(220,255,220);
+    font-weight: bold;
+    text-decoration: none;
+}
+a:visited{
+    color:rgb(220,255,220);
+}
+
+#titol{
+    display: inline;
+    font-size: 3.5em;
+    font-family:Impact;
+    text-align: left;
+    padding-left: 2%;
+    color:rgb(200,255,200);
+}
+
+#subtitol{
+    display: inline;
+    margin-left:4em;
+    color:rgb(220,255,220);
+    font-size:2em;
+}
+
+.cont{
+    row-gap: 10px;
+    display: grid;
+    grid-template-columns:20% 20% 20% 40%;
+    grid-template-rows:1fr 0.4fr 0.4fr 0.2fr 0.4fr;
+    grid-template-areas:
+    "image image image image"
+    "f f f direccio"
+    "f f f telfs"
+    "f f f web"
+    "f f f consentiment";
+}
+.imag {
+    grid-area:image;
+    width:80%;
+    object-fit:cover;
+    margin: auto;
+    margin-top: 1%;
+    
+}
+.imag > img{
+    width:100%;
+    height: auto;
+}
+.formulari{
+    grid-area:f;
+    margin-left: 20%;
+    height: 240%;
+}
+
+.formulari > label
+{
+    display:inline-block;
+    width:20%;
+    text-align: right;
+    font-size: 1.1em;
+    color:rgb(220,255,220);
+}
+.formulari > input
+{
+    display:inline-block;
+    background-color:rgb(220,255,220);
+}
+.formulari > input:nth-child(2),input:nth-child(5),input:nth-child(8),input:nth-child(14),
+input:nth-child(23),input:nth-child(26),input:nth-child(29)
+{
+    width:30%;
+}
+.formulari > input:nth-child(11)
+{
+    width:20%;
+}
+.formulari > input:nth-child(17)
+{
+    width:60%;
+}
+.formulari > input:nth-child(20)
+{
+    width:15%;
+}
+
+#coment{
+    width:60%;
+    height:20%;
+    background-color:rgb(220,255,220);
+}
+#bt{
+    width: 10%;
+    margin-left:71.5%;
+    font-size: 0.9em;
+    background-color: chartreuse;
+}
+
+/* Direccio */
+.direcc{
+    grid-area:direccio;
+    margin-right:30%;
+    border:1px solid;
+    color:rgb(220,255,220);
+    font-size:1.1em;
+}
+
+.direcc > label{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+.direcc > div
+{
+    display:inline-flex;
+    flex-direction: row;
+    height:80%;
+}
+
+#divdir div:nth-child(1){
+    display: block;
+    width:70%;
+}
+
+#divdir div:nth-child(2){
+     width:30%;
+     padding-right: 5%;
+}
+/* Telfs */
+.telfs{
+    grid-area:telfs;
+    margin-right:30%;
+    color:rgb(220,255,220);
+    font-size:1.3em;
+    line-height: 40%;
+}
+.web{
+    grid-area:web;
+    font-size:1.1em;
+    margin-right:30%;
+    color:rgb(220,255,220);
+    line-height: 15%;
+}
+.consen{
+    grid-area:consentiment;
+    margin-right:30%;
+    font-size: 0.75em;
+    color:rgb(220,255,220);
+}
+
+
+

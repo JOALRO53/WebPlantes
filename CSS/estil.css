@@ -8,24 +8,11 @@ body{
     height: 50%;
 }
 
-div{
-    display:block;
-}
-
 #ficus{
     display:block;
     object-fit: cover;
     width:40%;
     margin:auto;
-}
-
-#titol{
-    font-size: 3.5em;
-    font-family:Impact;
-    text-align: left;
-    padding-left: 2%;
-    color:rgb(200,255,200);
-    display: inline;
 }
 
 #plantes{
@@ -52,19 +39,22 @@ div{
     transform: rotate(1deg) translateX(-11.5%) translateY(-171%);
     text-align: center;
     padding-bottom:100%;
-
+    z-index:1;
 }
+
 #empresa{
-    transform: rotate(-3deg) translateX(23%) translateY(-275%);
+    transform: rotate(-3deg) translateX(23%) translateY(-274%);
     text-align: center;
     padding-bottom:100%;
+    position: absolute;
+    left: 69%;
 }
 
 a:link{
     color:rgb(220,255,220);
     font-weight: bold;
     text-decoration: none;
-    font-size:23px;
+    font-size:1.4em;
     z-index: 1;
 }
 a:visited{
@@ -73,6 +63,40 @@ a:visited{
 
 
 /* Per a Venda.html */
+#links{
+    display:inline-flex;
+    width:40%;
+    flex-direction: row;
+    margin-left: 24%;
+    flex-wrap: nowrap;
+    align-items:baseline;
+    column-gap: 3%;
+    color:rgb(220,255,220);
+}
+
+#titol{
+    display: inline;
+    font-size: 3.5em;
+    font-family:Impact;
+    text-align: left;
+    padding-left: 2%;
+    color:rgb(200,255,200);
+}
+
+#subtitol{
+    display: inline;
+    margin-left:2em;
+    color:rgb(220,255,220);
+    font-size:2em;
+}
+#fitosl,#serveisl,#home,#nosaltres,#contact{
+    font-size: 1em;
+}
+
+#fitosl{
+    padding-left: 20%;
+}
+
 .Plantes{
     margin-left:15%;
     margin-top:100px;
@@ -151,16 +175,6 @@ img{
     height: auto;
 }
 
-#home{
-    color:rgb(220,255,220);
-    display:inline;
-    padding-left: 60%;
-    font-size:1.5em;
-}
-#subtitol{
-    display:inline;
-    margin-left:2em;
-    color:rgb(220,255,220);
-}
+
 
 

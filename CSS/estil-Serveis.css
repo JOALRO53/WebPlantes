@@ -4,13 +4,22 @@ body{
 
 #links{
     display:inline-flex;
-    width:35%;
+    width:33%;
     flex-direction: row;
-    margin-left: 34%;
+    margin-left: 30%;
     flex-wrap: nowrap;
     align-items:baseline;
     column-gap: 3%;
     color:rgb(220,255,220);
+}
+
+.icona{
+    display:block;
+    position:absolute;
+    width:5%;
+    height: 11%;
+    top:0%;
+    left:16%;
 }
 
 a:link{
@@ -34,7 +43,7 @@ a:visited{
 
 #subtitol{
     display: inline;
-    margin-left:4em;
+    margin-left:7em;
     color:rgb(220,255,220);
     font-size:2em;
 }

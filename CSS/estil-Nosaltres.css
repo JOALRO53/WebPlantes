@@ -1,0 +1,162 @@
+body{
+    background-color:#205c1d;
+}
+
+#links{
+    display:inline-flex;
+    width:32%;
+    flex-direction: row;
+    margin-left: 30%;
+    flex-wrap: nowrap;
+    align-items:baseline;
+    column-gap: 3%;
+    color:rgb(220,255,220);
+}
+.icona{
+    display:block;
+    position:absolute;
+    width:5%;
+    height: 11%;
+    top:0%;
+    left:16%;
+}
+a:link{
+    color:rgb(220,255,220);
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+}
+a:visited{
+    color:rgb(220,255,220);
+}
+
+#titol{
+    display: inline;
+    font-size: 3.5em;
+    font-family:Impact;
+    text-align: left;
+    padding-left: 2%;
+    color:rgb(200,255,200);
+}
+
+#subtitol{
+    display: inline;
+    margin-left:7em;
+    color:rgb(220,255,220);
+    font-size:2em;
+}
+
+.cont{
+    color:rgb(220,255,220);
+    row-gap: 10px;
+    display: grid;
+    grid-template-columns:17.5% 17.5% 17.5% 17.5% 35%;
+    grid-template-rows:1fr 0.2fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-areas:
+    "image image image image image"
+    "retol retol retol retol retol"
+    "bastida1 bastida1 bastida1 coment1 coment1"
+    "bastida2 bastida2 bastida2 coment2 coment2"
+    "foto1 foto1 foto2 foto2 foto3"
+    "coment3 coment3 coment4 coment4 coment5";
+}
+
+.fotocap {   
+    grid-area:image;
+    width:65%;
+    object-fit:cover;
+    margin: auto;
+    margin-top: 1.8%;
+    margin-bottom: 1%;
+}
+
+.fotocap > img
+{
+    width:100%;
+}
+.ret{
+    grid-area:retol;
+    padding-left:20%;
+    line-height:60%;
+    text-decoration:underline;
+}
+.bast1{
+    margin-left: 20%;
+    grid-area:bastida1;
+    display: flex;
+}
+
+img[trans="1"]{
+    transition: opacity;
+    transition-duration: 1.5s;
+    z-index: 1;
+}
+img[trans="1"]:hover{
+    opacity:15%;
+}
+
+.bast1 img,.bast2 img{
+    position:absolute;
+}
+
+#im1,#im2,#im9,#im10{
+    left:14.3%;
+}
+#im3,#im4,#im11,#im12{
+    left:25%;
+}
+#im5,#im6,#im13,#im14{
+    left:35.7%;
+}
+#im7,#im8,#im15,#im16{
+    left:46.4%;
+}
+
+.com1{
+    grid-area:coment1;
+    margin-left:10%;
+    width:65%;
+}
+p{
+    margin-left:1.5%;
+    font-size: 1.1em;
+}
+
+.bast2{
+    margin-left: 20%;
+    display: flex;
+    grid-area:bastida2;
+}
+
+.com2{
+    margin-left:10%;
+    width:65%;
+    grid-area:coment2;
+}
+
+div[retol="2"]
+{
+    text-align: center;
+}
+.fot1{
+    grid-area:foto1;
+}
+.fot2{
+    grid-area:foto2;
+}
+.fot3{
+    grid-area:foto3;
+}
+/*---------------------*/
+.com3{
+    grid-area:coment3;
+    background-color:burlywood;
+}
+.com4{
+    grid-area:coment4;
+    background-color:chartreuse;
+}
+.com5{
+    grid-area:coment5;
+    background-color:red;
+}

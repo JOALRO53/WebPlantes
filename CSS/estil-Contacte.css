@@ -7,11 +7,19 @@ body{
     display:inline-flex;
     width:35%;
     flex-direction: row;
-    margin-left: 32%;
+    margin-left: 27%;
     flex-wrap: nowrap;
     align-items:baseline;
     column-gap: 4%;
     color:rgb(220,255,220);
+}
+.icona{
+    display:block;
+    position:absolute;
+    width:5%;
+    height: 11%;
+    top:0%;
+    left:16%;
 }
 
 a:link{
@@ -34,7 +42,7 @@ a:visited{
 
 #subtitol{
     display: inline;
-    margin-left:4em;
+    margin-left:7em;
     color:rgb(220,255,220);
     font-size:2em;
 }
@@ -53,10 +61,11 @@ a:visited{
 }
 .imag {
     grid-area:image;
-    width:80%;
+    width:64%;
     object-fit:cover;
     margin: auto;
-    margin-top: 1%;
+    margin-top: 1.8%;
+    margin-bottom: 1%;
     
 }
 .imag > img{
@@ -65,8 +74,8 @@ a:visited{
 }
 .formulari{
     grid-area:f;
-    margin-left: 20%;
-    height: 240%;
+    margin-left: 5%;
+    height: 250%;
 }
 
 .formulari > label

@@ -60,7 +60,48 @@ a:link{
 a:visited{
     color:rgb(220,255,220);
 }
-
+.foto1,.foto2,.foto3,.foto4,.foto5,.foto6,.icona{
+    display:block;
+    position:absolute;
+    width:25%;
+    height: 50%;
+    opacity: 60%;
+}
+.foto1{
+    top:30%;
+    left:5%;
+}
+.foto2{
+    top:30%;
+    left:70%;
+}
+.foto3,.foto4,.foto5,.foto6{
+    width:10%;
+    height: 10%;
+}
+.foto3{
+    top:6%;
+    left:27%;
+}
+.foto4{
+    top:6%;
+    left:63%;
+}
+.foto5{
+    top:74%;
+    left:27%;
+}
+.foto6{
+    top:74%;
+    left:63%;
+}
+.icona{
+    width:5%;
+    height: 5%;
+    top:0%;
+    left:16%;
+    opacity: 100%;
+}
 
 /* Per a Venda.html */
 #links{
@@ -85,16 +126,20 @@ a:visited{
 
 #subtitol{
     display: inline;
-    margin-left:2em;
+    margin-left:7em;
     color:rgb(220,255,220);
     font-size:2em;
 }
-#fitosl,#serveisl,#home,#nosaltres,#contact{
-    font-size: 1em;
-}
-
-#fitosl{
-    padding-left: 20%;
+#links{
+    display:inline-flex;
+    width:32%;
+    flex-direction: row;
+    margin-left: 23%;
+    flex-wrap: nowrap;
+    align-items:baseline;
+    column-gap: 3%;
+    color:rgb(220,255,220);
+    font-size: 0.75em;
 }
 
 .Plantes{

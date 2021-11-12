@@ -1,5 +1,6 @@
 body{
     background-color:#205c1d;
+    overflow-x: hidden;
 }
 
 #links{
@@ -51,7 +52,7 @@ a:visited{
     row-gap: 10px;
     display: grid;
     grid-template-columns:17.5% 17.5% 17.5% 17.5% 35%;
-    grid-template-rows:1fr 0.2fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows:1fr 0.2fr 0.5fr 0.5fr 1fr 0.2fr;
     grid-template-areas:
     "image image image image image"
     "retol retol retol retol retol"
@@ -147,16 +148,28 @@ div[retol="2"]
 .fot3{
     grid-area:foto3;
 }
-/*---------------------*/
+.fot1,.fot2,.fot3{
+    width:85%;
+}
+
 .com3{
     grid-area:coment3;
-    background-color:burlywood;
 }
 .com4{
     grid-area:coment4;
-    background-color:chartreuse;
 }
 .com5{
     grid-area:coment5;
-    background-color:red;
+}
+.com3,.com4,.com5{
+    width:80%;
+    text-align: center;
+    padding-left: 2%;
+}
+
+footer > img{
+    margin-top:5%;
+    height: 100%;
+    padding-left: 30%;
+
 }

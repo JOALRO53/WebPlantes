@@ -92,8 +92,9 @@ p,#llista{
     height: 49%;
 }
 #servs{
-    background-color:brown;
-    width:65%;
+    width:61%;
+    border:2px solid;
+    border-color:rgb(200,255,200);
 }
 #foto2{
     width:30%;
@@ -107,4 +108,10 @@ p,#llista{
 #llista{
     line-height: 250%;
     font-size:1.5em;
+}
+footer {
+    position:absolute;
+    margin-top:5%;
+    height: 10%;
+    padding-left: 30%;
 }

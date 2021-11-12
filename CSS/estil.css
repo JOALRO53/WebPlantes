@@ -4,47 +4,66 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.areafons{
-    height: 50%;
+
+.icona > img{
+    width:45%;
+    height: auto;
+}
+
+.icona{
+    display:block;
+    position:absolute;
+    top:0%;
+    left:16%;
+}
+
+#titol{
+    display: inline;
+    font-size: 3.5em;
+    font-family:Impact;
+    padding-left: 2%;
+    color:rgb(200,255,200);
 }
 
 #ficus{
     display:block;
     object-fit: cover;
-    width:40%;
+    width:31%;
     margin:auto;
 }
 
+div[rotlink="1"]{
+    text-align: center;  
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+}
 #plantes{
-    transform: rotate(58deg) translateX(-40%) translateY(-40%);
-    text-align: center;
+    transform: rotate(55deg) translateX(-40%) translateY(-60%);
     padding-bottom: 19.5%;
     padding-right: 3%;
-    
 }
 
 #serveis{
-    transform: rotate(-11deg) translateX(19%) translateY(-100%);
-    text-align: center;
+    transform: rotate(-11deg) translateX(22%) translateY(-104%);
     padding-bottom:47%;
 }
 
 #fitosanitaris{
-    transform: rotate(19deg) translateX(-54%) translateY(-100%);
-    text-align: center;
+    transform: rotate(19deg) translateX(-53.3%) translateY(-102%);
     padding-bottom:84.5%;
 }
 
 #contacte{
-    transform: rotate(1deg) translateX(-11.5%) translateY(-171%);
-    text-align: center;
+    transform: rotate(1deg) translateX(-11.5%) translateY(-173%);
     padding-bottom:100%;
     z-index:1;
 }
 
 #empresa{
-    transform: rotate(-3deg) translateX(23%) translateY(-274%);
-    text-align: center;
+    transform: rotate(-3deg) translateX(45%) translateY(-275%);
     padding-bottom:100%;
     position: absolute;
     left: 69%;
@@ -60,28 +79,35 @@ a:link{
 a:visited{
     color:rgb(220,255,220);
 }
-.foto1,.foto2,.foto3,.foto4,.foto5,.foto6,.icona{
+
+div[decor]{
     display:block;
     position:absolute;
     width:25%;
     height: 50%;
-    opacity: 60%;
+    /*opacity: 30%;*/
 }
+
 .foto1{
     top:30%;
     left:5%;
 }
+
 .foto2{
     top:30%;
     left:70%;
 }
+.foto1 > img,.foto2 > img{
+    width:100%;
+}
+
 .foto3,.foto4,.foto5,.foto6{
     width:10%;
     height: 10%;
 }
 .foto3{
     top:6%;
-    left:27%;
+    left:22%;
 }
 .foto4{
     top:6%;
@@ -89,137 +115,10 @@ a:visited{
 }
 .foto5{
     top:74%;
-    left:27%;
+    left:22%;
 }
 .foto6{
     top:74%;
     left:63%;
 }
-.icona{
-    width:5%;
-    height: 5%;
-    top:0%;
-    left:16%;
-    opacity: 100%;
-}
-
-/* Per a Venda.html */
-#links{
-    display:inline-flex;
-    width:40%;
-    flex-direction: row;
-    margin-left: 24%;
-    flex-wrap: nowrap;
-    align-items:baseline;
-    column-gap: 3%;
-    color:rgb(220,255,220);
-}
-
-#titol{
-    display: inline;
-    font-size: 3.5em;
-    font-family:Impact;
-    text-align: left;
-    padding-left: 2%;
-    color:rgb(200,255,200);
-}
-
-#subtitol{
-    display: inline;
-    margin-left:7em;
-    color:rgb(220,255,220);
-    font-size:2em;
-}
-#links{
-    display:inline-flex;
-    width:32%;
-    flex-direction: row;
-    margin-left: 23%;
-    flex-wrap: nowrap;
-    align-items:baseline;
-    column-gap: 3%;
-    color:rgb(220,255,220);
-    font-size: 0.75em;
-}
-
-.Plantes{
-    margin-left:15%;
-    margin-top:100px;
-    display:grid;
-    align-items: center;
-    width:100%;
-    grid-template-columns:17% 17% 17% 17%;
-    grid-template-rows:35% 35%;
-    column-gap: 1%;
-    row-gap: 5%;
-    grid-template-areas:
-    "roses orquidies clavells hortensies"
-    "cactus arbres horticoles arbustos"
-}
-
-.Roses{
-    grid-area:roses;
-}
-
-.Orquidies{
-    grid-area:orquidies;
-}
-.Clavells{
-    grid-area:clavells;
-}
-.Hortensies{
-    grid-area:hortensies;
-}
-.Cactus{
-    grid-area:cactus;
-}
-.Arbres{
-    grid-area:arbres;
-}
-.Horticoles{
-    grid-area:horticoles;
-}
-.Arbustos{
-    grid-area:arbustos;
-}
-
-.Plantes > *
-{
-    object-fit: cover;
-    display:block;
-    transition-property: width;
-    transition-property:all;
-    transition-duration: 0.5s;
-    transition-timing-function:cubic-bezier();
-}
-
-.Plantes > :hover{
-    border:5px solid;
-    border-color:green;
-    width: 150%;
-    z-index: 1;
-    transform:skew(30deg,-10deg);
-}
-.Plantes > :active{
-    border:15px solid;
-    border-color:red;
-    width: 200%;
-    z-index: 1;
-    transform:skew(30deg,-20deg);
-}
-
-label{
-    display:block;
-    font-size:2em;
-    color:rgb(220,255,220);
-    text-align: center;
-}
-
-img{
-    width:100%;
-    height: auto;
-}
-
-
-
 

@@ -3,6 +3,10 @@ body{
     overflow-y: hidden;
 }
 
+*{
+    color:rgb(220,255,220);
+}
+
 #links{
     display:inline-flex;
     width:35%;
@@ -11,8 +15,8 @@ body{
     flex-wrap: nowrap;
     align-items:baseline;
     column-gap: 4%;
-    color:rgb(220,255,220);
 }
+
 .icona{
     display:block;
     position:absolute;
@@ -23,27 +27,23 @@ body{
 }
 
 a:link{
-    color:rgb(220,255,220);
     font-weight: bold;
     text-decoration: none;
 }
-a:visited{
-    color:rgb(220,255,220);
+
+*[inline]
+{
+    display: inline;
 }
 
 #titol{
-    display: inline;
     font-size: 3.5em;
     font-family:Impact;
-    text-align: left;
     padding-left: 2%;
-    color:rgb(200,255,200);
 }
 
 #subtitol{
-    display: inline;
     margin-left:7em;
-    color:rgb(220,255,220);
     font-size:2em;
 }
 
@@ -84,13 +84,14 @@ a:visited{
     width:20%;
     text-align: right;
     font-size: 1.1em;
-    color:rgb(220,255,220);
 }
+
 .formulari > input
 {
     display:inline-block;
     background-color:rgb(220,255,220);
 }
+/* Tots els inputs del formulari amb el nombre de fill indicat */
 .formulari > input:nth-child(2),input:nth-child(5),input:nth-child(8),input:nth-child(14),
 input:nth-child(23),input:nth-child(26),input:nth-child(29)
 {
@@ -116,9 +117,10 @@ input:nth-child(23),input:nth-child(26),input:nth-child(29)
 }
 #bt{
     width: 10%;
-    margin-left:71.5%;
-    font-size: 0.9em;
+    margin-left:71.3%;
+    font-size: 1.1em;
     background-color: chartreuse;
+    color:black;
 }
 
 /* Direccio */
@@ -126,7 +128,6 @@ input:nth-child(23),input:nth-child(26),input:nth-child(29)
     grid-area:direccio;
     margin-right:30%;
     border:1px solid;
-    color:rgb(220,255,220);
     font-size:1.1em;
 }
 
@@ -152,26 +153,23 @@ input:nth-child(23),input:nth-child(26),input:nth-child(29)
      width:30%;
      padding-right: 5%;
 }
-/* Telfs */
+
+.web,.consen,.telfs{
+    margin-right: 30%;
+}
 .telfs{
     grid-area:telfs;
-    margin-right:30%;
-    color:rgb(220,255,220);
     font-size:1.3em;
     line-height: 40%;
 }
 .web{
     grid-area:web;
     font-size:1.1em;
-    margin-right:30%;
-    color:rgb(220,255,220);
     line-height: 15%;
 }
 .consen{
     grid-area:consentiment;
-    margin-right:30%;
     font-size: 0.75em;
-    color:rgb(220,255,220);
 }
 
 

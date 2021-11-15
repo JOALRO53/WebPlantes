@@ -2,6 +2,9 @@ body{
     background-color:#205c1d;
     overflow-y: hidden;
 }
+* {
+    color:rgb(220,255,220);
+}
 
 #links{
     display:inline-flex;
@@ -11,27 +14,26 @@ body{
     flex-wrap: nowrap;
     align-items:baseline;
     column-gap: 3%;
-    color:rgb(220,255,220);
 }
 
-#titol{
+*[inline]{
     display: inline;
-    font-size: 3.5em;
-    font-family:Impact;
-    text-align: left;
-    padding-left: 2%;
-    color:rgb(200,255,200);
 }
-
-#subtitol{
-    display: inline;
-    margin-left:7em;
-    color:rgb(220,255,220);
+*[f2m]{
     font-size:2em;
 }
 
+#titol{
+    font-size: 3.5em;
+    font-family:Impact;
+    padding-left: 2%;
+}
+
+#subtitol{
+    margin-left:7em;
+}
+
 .icona{
-    display:block;
     position:absolute;
     width:5%;
     height: 11%;
@@ -40,13 +42,8 @@ body{
 }
 
 a:link{
-    color:rgb(220,255,220);
     font-weight: bold;
     text-decoration: none;
-    z-index: 1;
-}
-a:visited{
-    color:rgb(220,255,220);
 }
 
 .fitos{   
@@ -81,7 +78,6 @@ div > img:hover{
 
 /* Tots els fills dels fills del div amb classe fitos que siguin un div */ 
 .fitos > div:nth-child(n):nth-child(-n+50) > div{
-    color:rgb(220,255,220);
     font-size: 1.1em;
     padding-top: 35%;
 }
@@ -173,12 +169,11 @@ div > img:hover{
 .empty9{
     grid-area:vuit9;
 }
+
 .empty9,.empty26{
     text-align: center;
     align-items: center;
     padding-top:10%;
-    font-size:2em;
-    color:rgb(220,255,220);
 }
 
 .empty10{
@@ -310,5 +305,4 @@ footer > img{
     margin-top:1%;
     height: 100%;
     padding-left: 30%;
-
 }

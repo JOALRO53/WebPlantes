@@ -2,7 +2,9 @@ body{
     background-color:#205c1d;
     overflow-x: hidden;
 }
-
+*{
+    color:rgb(220,255,220);
+}
 #links{
     display:inline-flex;
     width:32%;
@@ -11,10 +13,8 @@ body{
     flex-wrap: nowrap;
     align-items:baseline;
     column-gap: 3%;
-    color:rgb(220,255,220);
 }
 .icona{
-    display:block;
     position:absolute;
     width:5%;
     height: 11%;
@@ -22,33 +22,24 @@ body{
     left:16%;
 }
 a:link{
-    color:rgb(220,255,220);
     font-weight: bold;
     text-decoration: none;
-    z-index: 1;
 }
-a:visited{
-    color:rgb(220,255,220);
-}
-
-#titol{
+*[inline]{
     display: inline;
+}
+#titol{
     font-size: 3.5em;
     font-family:Impact;
-    text-align: left;
     padding-left: 2%;
-    color:rgb(200,255,200);
 }
 
 #subtitol{
-    display: inline;
     margin-left:7em;
-    color:rgb(220,255,220);
     font-size:2em;
 }
 
 .cont{
-    color:rgb(220,255,220);
     row-gap: 10px;
     display: grid;
     grid-template-columns:17.5% 17.5% 17.5% 17.5% 35%;
@@ -61,10 +52,12 @@ a:visited{
     "foto1 foto1 foto2 foto2 foto3"
     "coment3 coment3 coment4 coment4 coment5";
 }
-
+div[w65]
+{
+    width:65%;
+}
 .fotocap {   
     grid-area:image;
-    width:65%;
     object-fit:cover;
     margin: auto;
     margin-top: 1.8%;
@@ -75,16 +68,21 @@ a:visited{
 {
     width:100%;
 }
+
 .ret{
     grid-area:retol;
     padding-left:20%;
     line-height:60%;
     text-decoration:underline;
 }
-.bast1{
+div[ml20]
+{
     margin-left: 20%;
-    grid-area:bastida1;
     display: flex;
+}
+
+.bast1{
+    grid-area:bastida1;
 }
 
 img[trans="1"]{
@@ -92,6 +90,7 @@ img[trans="1"]{
     transition-duration: 1.5s;
     z-index: 1;
 }
+
 img[trans="1"]:hover{
     opacity:15%;
 }
@@ -100,38 +99,49 @@ img[trans="1"]:hover{
     position:absolute;
 }
 
-#im1,#im2,#im9,#im10{
+ /*Imatges del fill 1 de bast1 y bast2 */
+ .bast1 > :nth-child(1) img,
+ .bast2 > :nth-child(1) img
+{
     left:14.3%;
 }
-#im3,#im4,#im11,#im12{
+/*Imatges del fill 2 de bas1 y bast2 */
+.bast1 > :nth-child(2) img,
+.bast2 > :nth-child(2) img
+{
     left:25%;
 }
-#im5,#im6,#im13,#im14{
+/*Imatges del fill 3 de bas1 y bast2 */
+.bast1 > :nth-child(3) img,
+.bast2 > :nth-child(3) img
+{
     left:35.7%;
 }
-#im7,#im8,#im15,#im16{
+/*Imatges del fill 4 de bas1 y bast2 */
+.bast1 > :nth-child(4) img,
+.bast2 > :nth-child(4) img
+{
     left:46.4%;
 }
 
+*[ml10]
+{
+    margin-left:10%;
+}
 .com1{
     grid-area:coment1;
-    margin-left:10%;
-    width:65%;
 }
+
 p{
     margin-left:1.5%;
     font-size: 1.1em;
 }
 
 .bast2{
-    margin-left: 20%;
-    display: flex;
     grid-area:bastida2;
 }
 
 .com2{
-    margin-left:10%;
-    width:65%;
     grid-area:coment2;
 }
 
